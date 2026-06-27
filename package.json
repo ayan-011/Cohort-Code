@@ -1,0 +1,22 @@
+{
+  "name": "Hono",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "prisma:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.8.0",
+    "@prisma/extension-accelerate": "^3.0.1",
+    "hono": "^4.12.23"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "prisma": "^6.19.3",
+    "wrangler": "^4.4.0"
+  }
+}

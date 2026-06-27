@@ -1,0 +1,24 @@
+Original repo by Harkirat - https://github.com/100xdevs-cohort-2/week-13/tree/main/backend
+
+1. npm create hono@latest
+2. Create routes in index.ts
+3. Initialize Prisma
+4. create Schema's or Models in schema.prisma
+5. Make prisma pooling + postgresql Links and attach in files.
+    postgresQL url in - .env files and (fecth from console.aiven.io)
+    Prisma pooling url in - Wrangler.toml files (fecth from console.aiven.io)
+6. Migrate the prisma - 
+                    npx prisma migrate dev --name init_schema
+7. Generate the Prisma Client - 
+                    npx prisma generate --no-engine
+8. Add the accelrate extension - 
+                    npm i @prisma/extension-accelerate
+9. initialize jwt for tokens.
+10. middlewares.  starts with- Router.use("",async (c, next)=>{ logic ...})
+. 
+.
+.
+deploy project on CLOUDFLARE
+
+11. Initialize the ZOD adn implement it to the project, build a new folder apart from from backend and frontend for zod 
+    and write all zod code in the dufferent.
