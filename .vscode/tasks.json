@@ -1,0 +1,37 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Install Node typings",
+			"type": "shell",
+			"command": "npm install -D @types/node",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Typecheck project",
+			"type": "shell",
+			"command": "npx tsc --noEmit",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Validate Prisma schema",
+			"type": "shell",
+			"command": "DATABASE_URL=postgresql://postgres:postgres@localhost:5432/hono_prisma?schema=public npx prisma validate",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Validate Prisma schema",
+			"type": "shell",
+			"command": "$env:DATABASE_URL='postgresql://postgres:postgres@localhost:5432/hono_prisma?schema=public'; npx prisma validate",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

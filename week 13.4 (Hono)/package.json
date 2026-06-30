@@ -12,6 +12,7 @@
   "dependencies": {
     "@prisma/client": "^6.8.0",
     "@prisma/extension-accelerate": "^3.0.1",
+    "axios": "^1.18.1",
     "hono": "^4.12.23"
   },
   "devDependencies": {
