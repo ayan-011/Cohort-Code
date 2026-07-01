@@ -1,0 +1,10 @@
+1. npm i -g serve 
+   serve
+ - It start to serve the dist folder and run on PORT_3000 for ( production build website)
+
+2. CLIENT SIDE RENDERING
+   If you use {useState, useEffect} then you need to write "use client" at the top of file.
+   
+3. SERVER SIDE RENDERING 
+   use (async await) function.
+
